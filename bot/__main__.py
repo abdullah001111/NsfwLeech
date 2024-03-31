@@ -58,10 +58,10 @@ async def start(_, message):
     elif config_dict['DM_MODE'] and message.chat.type != message.chat.type.SUPERGROUP:
         start_string = 'Bot Started.\n' \
                        'Now I will send all of your stuffs here.\n' \
-                       'Use me at: @Z_Mirror'
+                       'Channel: @Mayhem_Bots'
     elif not config_dict['DM_MODE'] and message.chat.type != message.chat.type.SUPERGROUP:
         start_string = 'Sorry, you cannot use me here!\n' \
-                       'Join: @Z_Mirror to use me.\n' \
+                       'Join: @Mayhem_Bots to use me.\n' \
                        'Thank You'
     else:
         tag = message.from_user.mention
@@ -164,7 +164,7 @@ help_string = f'''
 <b>RSS Feed:</b>
 /{BotCommands.RssCommand}: Open RSS Menu.
 
-<b>Attention: Read the first line again!</b>
+<b>Powered By @Mayhem_Bots</b>
 '''
 
 @new_thread
